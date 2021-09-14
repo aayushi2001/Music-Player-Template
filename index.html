@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Music Player</title>
+    <!-- Stylesheet connected to the main index page. -->
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+    <!-- this script corresponds to the icons used -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+     
+</head>
+<body>    
+    <!-- whole navigation bar starts -->    
+    <nav class="nav-bar">
+        
+        <!-- first div which contains menu icon  -->
+        <div class="left-panel">
+            <a href="#menu-option-box"><i class="fas fa-bars icon"></i></a>
+        </div>
+
+        <!-- hidden option box  -->
+
+        <div class="menu-options" id="menu-option-box">
+            <p><a href ><i class="fas fa-home"></i> Home</a></p>
+            <hr>
+            <p><a href="third-page.html"><i class="fas fa-music"></i> My Music</a></p>
+            <hr>
+            <p><a href ><i class="far fa-bell"></i> Updates</a></p>
+            <hr>
+            <p><a href ><i class="fas fa-language"></i> Change Language</a></p>
+            <hr>
+            <p><a href ><i class="fas fa-cog"></i> Settings</a></p>
+            <hr>
+            <p><a href="#" style="color:red"><i class="fas fa-times"></i> Close</a></p>
+        </div>
+        <!-- second div which contains logo and name of music player -->
+        <div class="logo-name">
+            <div class="music-player-logo">
+                <img src="media/musiclogo1.png">
+            </div>
+            <div class="website-name">
+                <h2>
+                    Music Pro
+                </h2>
+                
+            </div>
+        </div>
+        
+        <!-- third div which contains text favourites -->
+        <div class="favourite">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        
+        <!-- fourth div which contains whole search bar -->
+        <div class="whole-search-bar">
+            <div>
+                <!-- search icon -->
+                <i class="fas fa-search search-icon2"></i>
+            </div>
+            <!-- search input  -->
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-icon3"></i>
+            </div>
+        </div>
+        <!-- fifth div which contains image of notification bell -->
+        
+        <div class="notification-bell">
+            <img src="media/bell_icon.png"> 
+
+        </div>
+        <!-- sixth div which contains users profile pic -->
+        
+        <div class="profile-picture">
+            <img src="media/profile_pic.png">
+        </div>
+    </nav>
+    <!-- All the content of the page is defined in main  -->
+    <main>
+        <!-- main is divided into two sections first one is left section  -->
+        <aside class="aside left-section">
+            <!-- whole div of carousel  -->
+            <div class="outer-carousel">
+                <div class="carousel">
+                    <!-- images in carousel -->
+                    <img src="media/img4.png">
+                    <img src="media/img2.png">
+                    <img src="media/img5.png">
+                </div>
+            </div>
+            <!-- another div for latest release  -->
+            <div class="latest-release">
+                <div class="latest-paras">
+                      <div class="latest-release-para1">
+                            <p class="p1">
+                                <b>Latest Release</b>
+                            </p>
+                      </div>
+                      <div class="latest-release-para2">
+                           <p class="p2"><a href="third-page.html" style="color: red;">More</a></p>
+                      </div>
+                </div>
+                <!-- this div contains content of the latest release section -->
+                <div class="latest-release-inside-content">
+                    <!--inside the content every song along with its image is contained inside a div with a class card -->
+                    <!-- first card -->
+                    <div class="card">
+                        <div class="image-button">
+                            <!-- image corresponding to first card -->
+                            <img src="media/Marshmello.jpg">
+                            <!-- button to play the song -->
+                            <a href="second-page.html">
+                            <i class="far fa-play-circle play-button"></i></a>  
+                            
+                        </div>
+                        <!-- info about the song -->
+                        <div class="song-description">
+                            <h3>
+                                Alone
+                            </h3>
+                            <p>
+                                Marshmello
+                            </p>
+                        </div>
+                        <!-- options shown on clicking three dots -->
+                        <div class="options">
+                            <label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox">
+                            <div class="latest-release-dropdown">
+                                <!-- all four divs contains different operations to be performed which will be displayed by clicking the dots -->
+                                <div class="drop-item">
+                                    <p><i class="fas fa-download"></i> Download</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <!-- duration of the song -->
+                            <p>
+                                3:35
+                            </p>
+                        </div>
+                    </div>
+                    <!-- second card -->
+                    <div class="card">
+                        <div class="image-button">
+                            <!-- image corresponding to second card  -->
+                            <img src="media/weekend.png">
+                            <!-- button to play the song  -->
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play-button" ></i></a>
+                            
+                        </div>
+                        <!-- info about the song  -->
+                        <div class="song-description">
+                            <h3>
+                               Starboy
+                            </h3>
+                            <p>
+                                Weeknd
+                            </p>
+                        </div>
+                        <!-- options shown on clicking three dots  -->
+                        <div class="options">
+                            <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox2">
+                            <div class="latest-release-dropdown">
+                                <!-- all four divs contains different operations to be performed which will be displayed by clicking the dots -->
+                                <div class="drop-item">
+                                    <p><i class="fas fa-download"></i> Download</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <!-- duration of the song  -->
+                            <p>
+                                3:20
+                            </p>
+                        </div>
+                    </div>
+                    <!-- third card -->
+                    <div class="card">
+                        <div class="image-button">
+                            <!-- image corresponding to third card -->
+                            <img src="media/rockstar.png">
+                            <!-- button to play the song  -->
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play-button"></i></a>
+                            
+                        </div>
+                        <!-- info about the song  -->
+                        <div class="song-description">
+                            <h3>
+                                Beggin
+                            </h3>
+                            <p>
+                                Maneskin - Chosen
+                            </p>
+                        </div>
+                        <!-- options shown on clicking three dots  -->
+                        <div class="options">
+                            <label for="latest-release-checkbox3"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox3">
+                            <div class="latest-release-dropdown">
+                                <!-- all four divs contains different operations to be performed which will be displayed by clicking the dots -->
+                                <div class="drop-item">
+                                    <p><i class="fas fa-download"></i> Download</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <!-- duration of the song -->
+                            <p>
+                                3:02
+                            </p>
+                        </div>
+                    </div>
+                    <!-- fourth card -->
+                    <div class="card">
+                        <div class="image-button">
+                            <!-- image corresponding to fourth card  -->
+                            <img src="media/dynamite.png">
+                            <!-- button to play the song  -->
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play-button" ></i></a>
+                            
+                        </div>
+                        <!-- info about the song  -->
+                        <div class="song-description">
+                            <h3>
+                                Dynamite
+                            </h3>
+                            <p>
+                                Parker - Dynamite
+                            </p>
+                        </div>
+                        <!-- options shown on clicking three dots  -->
+                        <div class="options">
+                            <label for="latest-release-checkbox4"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox4">
+                            <div class="latest-release-dropdown">
+                                <!-- all four divs contains different operations to be performed which will be displayed by clicking the dots -->
+                                <div class="drop-item">
+                                    <p><i class="fas fa-download"></i> Download</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <!-- duration of the song  -->
+                            <p>
+                                3:19
+                            </p>
+                        </div>
+                    </div>
+                    <!-- fifth card -->
+                    <div class="card">
+                        <div class="image-button">
+                            <!-- image corresponding to fifth card  -->
+                            <img src="media/fifth1.png">
+                            <!-- button to play the song  -->
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play-button"></i></a>
+                            
+                        </div>
+                        <!-- info about the song  -->
+                        <div class="song-description">
+                            <h3>
+                                WAP
+                            </h3>
+                            <p>
+                                Todd Beasley
+                            </p>
+                        </div>
+                        <!-- options shown on clicking three dots  -->
+                        <div class="options">
+                            <label for="latest-release-checkbox5"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox5">
+                            <div class="latest-release-dropdown">
+                                <!-- all four divs contains different operations to be performed which will be displayed by clicking the dots -->
+                                <div class="drop-item">
+                                    <p><i class="fas fa-download"></i>Download</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <!-- duration of the song  -->
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                    <!-- sixth card -->
+                    <div class="card">
+                        <div class="image-button">
+                            <!-- image corresponding to sixth card -->
+                            <img src="media/sixth.png">
+                            <!-- button to play the song  -->
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play-button"></i></a>
+                            
+                        </div>
+                        <!-- info about the song  -->
+                        <div class="song-description">
+                            <h3>
+                                Peaches
+                            </h3>
+                            <p>
+                                Justin Bieber - Justice
+                            </p>
+                        </div>
+                        <!-- options shown on clicking three dots -->
+                        <div class="options">
+                            <label for="latest-release-checkbox6"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox6">
+                            <div class="latest-release-dropdown">
+                                <!-- all four divs contains different operations to be performed which will be displayed by clicking the dots -->
+                                <div class="drop-item">
+                                    <p><i class="fas fa-download"></i> Download</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <!-- duration of the song  -->
+                            <p>
+                              2:39
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popular artists section begins -->
+            <div class="popular-artists">
+                <!-- headings placed side by side -->
+                
+                <div class="artist-paras">
+                    <div class="artist-para1">
+                          <p class="p1">
+                              <b>Popular Artists</b>
+                          </p>
+                    </div>
+                    <div class="artist-para2">
+                         <p class="p2"><a href="third-page.html" style="color: red;">More</a></p>
+                    </div>
+              </div>
+                <!-- this contains the content of the popular artists section -->
+                <div class="popular-artist-content">
+                    
+                    <!-- first artist -->                    
+                        <div class="whole-artist-cover">
+                            <!-- on clicking the image redirection of page will take place -->
+                            <a href="third-page.html"><img src="media/adele.png"></a>                            
+                            <p>
+                                Adele
+                            </p>
+                        </div>
+                    
+                    <!-- second artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/billie-eilish.png"></a>                            
+                            <p>
+                                Billie Eilish
+                            </p>
+                        </div>
+                    
+                    <!-- third artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/bruno-mars.png" ></a>                            
+                            <p>
+                                Bruno Mars
+                            </p>
+                        </div>
+                    
+                    <!-- fourth artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/Camila.png"></a>                            
+                            <p>
+                                Camila Cabello
+                            </p>
+                        </div>
+                    
+                    <!-- fifth artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/drake.png"></a>                            
+                            <p>
+                                Drake
+                            </p>
+                        </div>
+                    
+                    <!-- sixth artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/ed-shreen.png"></a>                            
+                            <p>
+                                Ed Sheeran
+                            </p>
+                        </div>
+
+                    <!-- seventh artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/eminem.png"></a>
+                            <p>
+                                Eminem
+                            </p>
+                        </div>
+
+                    <!-- eighth artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/katy-perry.png"></a>                            
+                            <p>
+                                Katy Perry
+                            </p>
+                        </div>
+                    
+                    <!-- nineth artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/6ix9ine.png"></a>                            
+                            <p>
+                                6ix9ine
+                            </p>
+                        </div>
+                    
+                    <!-- tenth artist -->                    
+                        <div class="whole-artist-cover">
+                            <a href="third-page.html"><img src="media/post-malone.png"></a>                            
+                            <p>
+                                Post Malone
+                            </p>
+                        </div>
+                    
+                </div>
+            </div>
+            <!-- music stations section starts -->
+            <div class="music-themes">
+                <!-- first div which contains three another divs and info about what is displayed along with it -->
+                <div class="stations">
+                    <div class="div1">
+                        <div class="div2">
+                            <div class="div3">
+                                <img src="media/musiclogo1.png">
+                                <p>Stations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content part of themes starts -->
+                    <div class="theme-content">
+                        <img src="media/vibe.png">
+                        <p>Vibe</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/rock.png">
+                        <p>Rock</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/love2.png">
+                        <p>Love</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/pop.png">
+                        <p>Pop</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="media/retro.png">
+                        <p>Retro</p>
+                    </div>
+                    
+                    <div class="theme-content">
+                        <img src="media/gym.png">
+                        <p>GYM</p>
+                    </div>
+            </div>
+            <!-- themes section with different alignment -->
+            <div class="music-themes-2">
+                 
+                <!-- 3 divs -->
+                <!-- outer div contains the image and inner div contains the text -->
+                <div class="outer-div">
+                    <a href="third-page.html">
+                    <div class="inner-div">                        
+                        <span>Party</span>   <!-- when the image is clicked user is redirected to a new page-->
+                    </div>
+                    </a>
+                </div>
+                                
+                <div class="outer-div">
+                    <a href="third-page.html">
+                    <div class="inner-div">
+                        <span>Electronic</span>    <!-- when the image is clicked user is redirected to a new page-->
+                    </div>
+                </a>
+                </div>
+                                
+                <div class="outer-div">
+                    <a href="third-page.html">
+                    <div class="inner-div">
+                        <span>Travel</span>        <!-- when the image is clicked user is redirected to a new page-->
+                    </div>
+                    </a>
+                </div>
+                
+            </div>
+            <!-- latest english songs section starts  -->
+            <div class="language english">
+                <!-- div for adjusting two different paragraphs -->
+                <div class="artist-paras">
+                    <div class="artist-para1">
+                          <p class="p1">
+                              <b>Latest English</b>
+                          </p>
+                    </div>
+                    <div class="artist-para2">
+                         <p class="p2"><a href="third-page.html" style="color: red;">More</a></p>
+                    </div>
+              </div>
+                <!-- contents of latest english songs section -->
+                                   
+                <div class="language-content">
+                    <!-- 1 -->
+                    <div>
+                        <!-- combined div of image and play button -->
+                        <div class="img-button">
+                            <img src="media/need_to_know.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Need To Know</p>                        
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/let_me_go.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Let me Go!</p>                        
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/fighter.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Fighter</p>                        
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/roar.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Roar</p>                        
+                    </div>
+                    <!-- 5 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/arcade.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Arcade</p>                        
+                    </div>
+                    <!-- 6 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/stay.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Stay</p>                        
+                    </div>
+                </div>
+            </div>
+            <!-- latest hindi songs section starts -->
+            <div class="language hindi">
+                <!-- div for adjusting two different paragraphs -->
+                <div class="artist-paras">
+                    <div class="artist-para1">
+                          <p class="p1">
+                              <b>Latest Hindi</b>
+                          </p>
+                    </div>
+                    <div class="artist-para2">
+                         <p class="p2"><a href="third-page.html" style="color: red;">More</a></p>
+                    </div>
+              </div>
+                <!-- content of latest hindi song section -->
+                <div class="language-content">
+                    <!-- 1 -->
+                    <div>
+                        <!-- combined div of image and play button  -->
+                        <div class="img-button">
+                            <img src="media/sakhiyan.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Sakhiyan 2.0</p>                        
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/Raatan.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Raataan Lambiyan</p>                        
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/bhai.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Bhai Bhai</p>                        
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/bewafa.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Bewafa Tera Muskurana</p>                        
+                    </div>
+                    <!-- 5 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/sach.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Sach Keh Raha Hai</p>                        
+                    </div>
+                    <!-- 6 -->
+                    <div>
+                        <div class="img-button">
+                            <img src="media/toota.png">
+                            <a href="second-page.html"><i class="far fa-play-circle play-button-2"></i></a>
+                        </div>                        
+                        <p>Toota Taara</p>                        
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+    
+        <!-- main is divided into two sections left section is completed now right section starts -->
+        <!-- when width of page is reduced this label will be shown to the user  -->
+        <label for="queue"><i class="fas fa-angle-double-left"></i>Queue</label>
+        
+        <input type="checkbox" id="queue">
+        <!-- section 2 starts -->
+        <aside class="aside section-2">
+            <!-- heading -->
+            <div class="section-2-headings">
+                <h1>Playlist</h1>
+                <h4>
+                    <a href="#queue-option-box">Queue <i class="fas fa-chevron-circle-down"></i></a>
+                </h4>
+            </div>
+            <!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+            <!-- it will have 3 options, playlists, favourite songs and Close button. it will close when one clicks on the close button. -->
+            <div class="queue-options-hidden" id="queue-option-box">
+                <p><a href="third-page.html" style="color:black"><i class="fas fa-music"></i> Playlists</a></p>
+                <hr>
+                <p><a href style="color:black"><i class="fab fa-gratipay"></i> Favourite songs</a></p>
+                <hr>
+                <p><a href="#" style="color:red"><i class="fas fa-times"></i> Close</a></p>
+            </div>
+            <!-- this is the content of the playlist. it will be dynamic. -->
+            <div class="whole-playlist-content">
+                <!-- 1st item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <!-- index -->
+                        <div class="numbers">
+                            01
+                        </div>
+                        <!-- image and play-button -->
+                        <div class="image2-button2">                            
+                            <img src="media/alone3.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2" ></i>
+                            </a>
+                        </div>
+                        <!-- name and author of the song -->
+                        <div>
+                            <div>
+                                Alone
+                            </div>
+                            <p>
+                                Alan Walker
+                            </p>
+                        </div>
+                    </div>
+                    <!-- heart button -->
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 2nd item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            02
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/on_my_way.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                On My Way
+                            </div>
+                            <p>
+                                Alan Walker
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 3rd item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            03
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/intentions.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Intentions
+                            </div>
+                            <p>
+                                Justin Bieber
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 4th item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            04
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/safari2.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Safari
+                            </div>
+                            <p>
+                                Serena
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 5th item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            05
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/blinding_lights.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Blinding Lights
+                            </div>
+                            <p>
+                                The Weeknd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 6th item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            06
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/sugar2.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Sugar & Brownies
+                            </div>
+                            <p>
+                                Dharia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 7th item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            07
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/closer.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Closer
+                            </div>
+                            <p>
+                                Halsey
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 8th item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            08
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/without_me.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Without Me
+                            </div>
+                            <p>
+                               Halsey
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 9th item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            09
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/girls.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Girls Like You
+                            </div>
+                            <p>
+                                Cardi B and Maroon 5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 10th playlist item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            10
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/dont_let.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Don't Let Me Down
+                            </div>
+                            <p>
+                                The Chainsmokers and Daya
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 11th playlist item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            11
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/happier.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Happier
+                            </div>
+                            <p>
+                                Marshmello and Bastille
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 12th item -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div class="numbers">
+                            12
+                        </div>
+                        <div class="image2-button2">
+                            <img src="media/baby.png">
+                            <a href="second-page.html">
+                                <i class="far fa-play-circle play2-button2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div>
+                                Baby
+                            </div>
+                            <p>
+                               Ludacris and Justin Bieber
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-most-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!-- footer part starts which is displayed on the bottom of the page  -->
+    <footer>
+        <div class="song-content">
+            <!-- icon (up arrow) -->
+            <i class="fas fa-angle-up icon"></i>
+            <!-- song image -->
+            <div class="song-image">
+                <img src="media/Marshmello.jpg">
+            </div>
+            <!-- song name and author -->
+            <div class="name-author">
+                <div>
+                    Alone
+                </div>
+                <div>
+                    Marshmello 
+                </div>                
+            </div>
+            <!-- heart icon and ban icon -->
+            <div class="heart-ban">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the song controls -->
+        <div class="song-played">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><a href="second-page.html"><i class="far fa-play-circle" style="color: rgb(103, 103, 231);"></i></a></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- song-duration slider -->
+            <div class="slider">
+                <!-- current time -->
+                <div class="displayed-time">
+                    1:39
+                </div>
+                <div class="adjust-slider">
+                    <input type="range" min="0" max="100" value="0" class="slider">
+                </div>
+                <!-- total time -->
+                <div class="displayed-time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons on the right-most side of footer -->
+        <div class="other-icons">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

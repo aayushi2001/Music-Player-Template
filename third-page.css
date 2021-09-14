@@ -1,0 +1,949 @@
+body {	
+	background-color: #14113f;
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: white;
+}
+/* inside this menu icon is placed   */
+.left-pannel {
+    width: 4rem;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fff;
+    height: 35vh;
+    transition: all 1s;
+  }
+/* menu icon on the top left */
+  .icon {
+    border-radius: 50%;
+    cursor: pointer;
+	position: relative;
+    font-size: 1.8em;
+    margin-top: 0.6rem;
+    z-index: 1;
+  }
+  /* hidden option box  */
+  .menu-options {
+	position: fixed;
+	top: 14%;
+	background-color: rgb(219, 236, 243);
+	width: 15%;
+	height: auto;	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1%;
+	box-sizing: border-box;
+	overflow: hidden;
+	z-index: 2; 
+	opacity: 0;
+	transform: scale(0);
+	transition: all ease-in-out 0.25s;
+	position: reltive;
+}
+/* when the queue option box becomes target */
+#menu-option-box:target {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.menu-options p {
+	text-align: center;
+	font-weight:bolder;
+	color: black;
+}
+.menu-options p a {
+	text-decoration: none;
+	color: black;
+}
+/* horizontal line in queue options box */
+hr {
+	width: 90%;
+	color: black;
+}
+/* remove all the margins */
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0px;
+}
+/* remove all styles from the links */
+a {
+	text-decoration: none;
+	color: white;
+}
+/* navigation bar */
+.nav-bar {
+	height: auto;
+	width: auto;
+	background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+	display: flex;        /* in one line */
+    flex-direction: row;      /* row wise display in a line  */
+	 flex-wrap: wrap;         /* adjust the components according to space */
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 2%;
+	padding-right: 5%;
+    padding-top: 3%;
+	transition: all ease-in-out 1s; /* when page loads every element inside navigation bar eases in and out*/
+}
+/* all the divs inside the navigation bar should be placed side by side*/
+.nav-bar > div {
+	display: inline-block;
+}
+
+/* website logo image */
+.music-player-logo img {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+/* all divs inside the combined title */
+.logo-name > div {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* favourites text */
+.favourite {
+	color: white;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	perspective: 10000px;
+	transform-style: preserve-3d;
+	animation-iteration-count: infinite;
+}
+
+/* search bar combined with icons */
+.whole-search-bar {
+	width: 20%;
+	position: relative; 
+    padding-left: 30%;
+}
+/* input inside search bar */
+.whole-search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+    font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+
+/* search icon  */
+.search-icon2 {
+	color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+    padding-left: 56%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.mic-icon3 {
+	color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* remove blue outline when search bar is clicked */
+input:focus {
+	outline: none;
+}
+@media screen and (max-width: 1200px) {
+	/* animated favourites text, whole search bar, input in search bar (originally hidden) */
+	.favourite {
+		display: none !important;
+	}
+		
+	input {
+		font-size: 11px !important;
+	}
+}
+/* notification bell image */
+.notification-bell img {
+	width: 40px;
+	height: 30px;
+    border-radius: 100%;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	position: first;
+}
+
+/* profile picture of the user */
+.profile-picture img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+}
+/* media query for navigation bar  */
+@media screen and (max-width: 550px) {
+	
+	/* website image in navigation bar */
+	.music-player-logo img {
+		height: 30px;
+		width: 30px;
+	}
+	/* website name */
+	.website-name h2 {
+		font-size: 3vw;
+	}	
+	/* notification bell */
+	.notification-bell img {
+		width: 20px;
+		height: 20px;
+	}
+	/* profile picture */
+	.profile-picture img {
+		width: 30px;
+		height: 30px;
+	}
+	/* notification bell and profile picture */
+	.notification-bell,
+	.profile-picture {
+		margin-top: 8px;
+	}
+}
+/* main section starts*/
+main {
+	width: 100%;
+	padding: 0% 3%;
+	padding-bottom: 5%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: all ease-in-out 1s;
+}
+/* aside section */
+.aside {
+	display: inline-block;
+	overflow: hidden;
+}
+/* first section of main */
+.left-section {
+	width: 70%;
+	height: 85vh;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+/* hidden scroll bar*/
+.left-section::-webkit-scrollbar {
+	display: none;
+}
+/* section 2 of the main part */
+.section-2 {
+	width: 28%;
+	height: 85vh;
+	z-index: 2;
+}
+
+/* left section of aside starts with first div */
+/* artist playlist information */
+.artist-playlist-info {
+	height: 20vw;
+	width: 100%;
+	margin-top: 12px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #4d526b;
+	margin-bottom: 40px;
+	position: relative;
+	border-radius: 45px;	
+}
+
+/* image inside playlist info */
+.art-play-img {
+	height: 20vw;
+	width: 20vw;
+	background-image: url("media/alan_walker.png");
+	background-size: cover;
+	border-radius: 15%;
+    
+}
+/* right side of playlist info (content-part) */
+.playlist-content {
+	width: 67%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-right: 12px;
+}
+/* descriptive part contains the descripton of the song and action part contains the follow and play buttons */
+.desc-part,
+.action-part {
+	width: 100%;
+	height: max-content;
+}
+/* song name heading properties */
+.song-name-main h1 {
+	margin-top: 5px;
+	font-size: 2vw;
+}
+@media screen and (max-width: 1200px) {	
+	.song-name-main h1 {
+		font-size: 2.4vw;
+	}
+	.desc {
+		font-size: 1.2vw;
+	}
+}
+@media screen and (max-width: 550px){
+	.artist-playlist-info{
+		height: auto;
+		width: auto;
+	}
+}
+.author {
+	font-size: 18px;
+}
+/* styling of buttons */
+.btns > button {
+	border: 0px;
+	height: 3vw;
+	width: 10vw;
+	color: white;
+	font-size: 1.2vw;
+	border-radius: 70px;
+	cursor: pointer;
+}
+
+/* play button */
+.btns > button:nth-child(1) {
+	background-image: linear-gradient(-19deg, red 0%, blue 100%);
+}
+/* follow button */
+.btns > button:nth-child(2) {
+	height: 2.5vw;
+	width: 8vw;
+	background-color: transparent;
+	border: 2px solid black;
+}
+/* download button  */
+.btns > button:nth-child(3) {
+	height: 2.5vw;
+	width: 10vw;
+	background-color: transparent;
+	border: 2px solid black;
+}
+/* share button  */
+.btns > button:nth-child(4){
+	height: 2.5vw;
+	width: 3vw;
+	background-color: transparent;
+	border: 2px solid black;
+	border-radius: 50px;
+	 margin-left: 17%; 
+}
+/* info-button */
+.btns > button:nth-child(5){
+	height: 2.5vw;
+	width: 3vw;
+	background-color: transparent;
+	border: 2px solid black;
+	border-radius: 50px;	
+}
+.button-part p {
+	font-size: 1vw;
+}
+@media screen and (max-width: 900px) {
+	/* artist playlist description */
+	.desc-part {
+		font-size: 1.6vw;
+	}
+	/* this will be shown as size of the page is small */
+	label {
+		display: block;
+	}
+	/* hidden section 2 by default */
+	.section-2 {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 68vh;
+		background-color: #050043;
+		box-shadow: 0px 0px 2px 1px white;
+		right: 0px;
+		top: 23.5%;
+		overflow: scroll;
+		padding-left:10px;
+		z-index: 5;
+		padding-right:5px;
+		transition:visibility ease-in-out 0.3s;
+		transition: opacity ease-in-out 0.3s;
+	}
+	/* queue button */
+	input[type="checkbox"]:checked ~ .section-2 {
+		visibility: visible;
+		opacity: 1;
+	}
+	.similar-artists-list {
+		overflow: hidden;
+		height: auto;
+	}
+	.list-item {
+		background-color: #1a1e33;
+	}
+	/* hide section 2 scrollbar */
+	.section-2::-webkit-scrollbar {
+		display: none;
+	}
+	/* section 2 is hidden, section-1 will cover the whole page */
+	.section-1 {
+		width: 100%;
+	}
+	/* whole artist info */
+	.artist-playlist-info {
+		height: 30vw;
+	}
+	/* image in artist info */
+	.art-play-img {
+		height: 30vw;
+		width: 30vw;
+	}
+	/* buttons in artist info */	
+	.btns > button {
+		height: 4vw;
+		width: 11vw;
+		font-size: 1.7vw;
+	}
+}
+
+/* styling of another div */
+.songs-highlight{
+	height : 8vh;
+}
+.songs-highlight p{
+	font-weight: bolder;
+	font-size: 25px;
+}
+/* headings info */
+.heading-div{
+	height: 8vh;
+}
+.heading-div p{
+	display: inline-block;
+}
+
+@media screen and (max-width: 550px) {
+	
+	
+	.song-name-main h1 {
+		font-size: 2.5vw;
+	}
+	/* paragraph in artist info */	
+	.author {
+		font-size: 3vw;
+	}
+	/* artist playlist description */
+	.desc-part {
+		font-size: 3vw;
+		padding-left: 4px;
+	}
+	/* buttons in artist info */
+	.buttons-part {
+		padding-top: 0px;
+	}
+	.buttons-part p{
+		font-size: 2.2vw;
+	}
+	/* whole artist info */
+	.artist-playlist-info {
+		height: 60vw;
+		text-align: justify;
+	}
+	/* image in artist info */
+	.art-play-img {
+		height: 60vw;
+		width: 60vw;
+	}
+	/* buttons in artist info */
+	.btns > button {
+		height: 8vw;
+		width: 17vw;
+		font-size: 1.5vw;
+	}
+	
+	/* footers image  */
+	.song-image {
+		display: none;
+	}
+}
+
+/* particular item in the playlist */
+.playlist {
+	height: 8vh;
+	box-sizing: border-box;
+	background-color:#45404b;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;	
+}
+/* playlist item hover effects */
+.playlist:hover {
+	background-color: #606a9e;
+}
+/* left part of playlist */
+.left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 40%;
+	height: 100%;
+	padding: 0% 1%;
+}
+
+/* center part of playlist */
+.center {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: min-content;
+	width: 30%;
+	height: 100%;
+	position: relative;
+	margin: auto;
+	font-size: 15px;
+	color: rgb(185, 185, 185);	
+}
+
+ /* div which is initially hidden */
+.empty{	
+	height: 100%;
+	width: 15%;	
+	display: none;
+	margin-top: 4%;
+	margin-left: auto;
+}
+/* styling icons inside hidden div  */
+.empty i{
+	height: 100px;
+	width: 100px;	
+}
+.empty > i:nth-child(2){
+	padding-left: 10px;
+}
+/* right part of the playlist item, which contains icons */
+.right {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 15%;
+	height: 100%;
+	padding-right: 2%;
+}
+/* on hover on playlist empty div (initially hidden) will be shown */
+.playlist:hover .empty{
+	display: block;
+}
+/* 2nd child component in left section */
+.left > div:nth-child(2) {
+	height: 80%;
+	min-width: 50px;
+	max-width: 50px;
+	margin: 0px 12% 0px 12%;
+	position: relative;
+}
+/* image inside 2nd child component in left section  */
+.left > div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+/* paragraph inside 3rd child component in left section  */
+.left > div:nth-child(3) p {
+	color: rgb(185, 185, 185);
+}
+/* styling font in playlist */
+.left div p {
+	font-size: 14px;
+}
+/* styling the play button */
+.play-btn {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all ease-in-out 0.1s;
+}
+/* on hover on button opacity changes */
+.play-btn:hover {
+	opacity: 0.7;
+}
+@media screen and (max-width: 550px){
+	div.center{
+		display: none;
+	}
+	div.heading-div{
+		display: none;
+	}
+
+}
+@media screen and (max-width: 700px){
+	div.heading-div{
+		display: none;
+	}
+
+}
+@media screen and (max-width: 900px){
+	div.heading-div{
+		display: none;
+	}
+
+}
+/* label will be shown on decreasing the size of the page  */
+label[for="queue"] {
+	display: none;
+	position: absolute;
+	right: 0%;
+	top: 20%;
+	padding-bottom: 5px;
+	z-index: 4;
+	box-shadow: 0px 0px 2px 1px white;;
+	width: 70px;
+	font-size: 20px;
+	height: 21px;
+	text-align: center;
+	background-image: linear-gradient(rgb(236, 103, 103), rgb(121, 121, 240));
+	cursor: pointer;
+}
+/* initially hidden */
+label[for="queue"]:checked ~ input {
+	display: none;
+}
+/* media query  */
+@media screen and (max-width: 900px) {
+	/* queue button will be initially hidden */
+	label[for="queue"] {
+		display: block;
+	}
+	/* hidden section 2 by default */
+	.section-2 {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 66vh;
+		background-color: #050043;
+		box-shadow: 0px 0px 2px 1px white;
+		right: 0px;
+		top: 23.5%;
+		z-index: 5;
+		overflow: scroll;
+		padding-left:10px;
+		transition: visibility ease-in-out 0.2s;
+		transition: opacity ease-in-out 0.2s;
+	}
+	.whole-playlist-content {
+		overflow: visible;
+	}
+	/* re-adjusted the queue options box */
+	.queue-options-hidden {
+		position: absolute;
+		height: auto;
+		width: auto;
+		top: 7%;
+		right: 0%;
+	}
+	/* queue button */
+	input[id="queue"]:checked ~ .section-2 {
+		visibility: visible;
+		opacity: 1;
+	}
+	/* section-2 hidden scrollbar */
+	.section-2::-webkit-scrollbar {
+		display: none;
+	}
+	/* when section-2 is hidden, section-1 covers the whole page */
+	.section-1 {
+		width: 100%;
+	}
+}
+/* aside section heading  */
+.section-heading {
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 12px;
+}
+/* adjusting side by side display */
+.section-heading div,
+.section-heading h1 {
+	display: inline-block;
+}
+.section-heading h1 {
+	font-size: 23px;
+}
+.section-heading div {
+	position: absolute;
+	bottom: 0%;
+	right: 0px;
+	font-size: 14px;
+	color: red;
+	cursor: pointer;
+}
+
+.similar-artist-list {
+	height: 36vh;
+	overflow: scroll;
+}
+
+/* hiding the scrollbar */
+.similar-artist-list::-webkit-scrollbar {
+	display: none;
+}
+
+/* particular item */
+.list-item {
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 12px;
+}
+/* hovering effect for list item */
+.list-item:hover {
+	background-color:#8291df;
+	border: 1px solid white;
+}
+
+/* adjusting name and image  */
+.list-item > div:nth-child(1) {
+	width: 100px;
+	height: 100%;
+	position: relative;
+}
+
+/* setting the position of image using class of div */
+.img-button{
+	position: relative;
+}
+/* setting image */
+.img-button img{
+	height: 100px;
+	width: 100px;
+}
+/* setting the position and styles of button on the image */
+.play-button-2{
+	position: absolute;
+	top: 66%;
+	left: 3%;
+	color: #110202;
+	font-size: 30px;
+}
+
+.name {
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.extra {
+	text-align: right;
+	height: 100%;
+}
+/* particular item in the playlist */
+.playlist-item {
+	height: 8vh;
+	box-sizing: border-box;
+	background-color:#45404b;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;	
+}
+/* playlist item hover effects */
+.playlist-item:hover {
+	background-color: #606a9e;
+}
+/* hover effect on icon (heart) */
+.playlist-item:hover .fa-heart{
+	animation-name: glowing-heart;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 1s;
+}
+/* animation for glowing-heart */
+@keyframes glowing-heart {	
+	100% {
+		color: red;
+	}
+}
+.list {
+	height: 36vh;
+	overflow: scroll;
+}
+/* hiding the scrollbar */
+.list::-webkit-scrollbar {
+	display: none;
+}
+
+/* footer starts  */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 75px;
+	background-color: #721818;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	box-sizing: border-box;
+	z-index: 6;
+	border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+	position: fixed;
+}
+/* content of the song  */
+.song-content {
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* image of the song */
+.song-image {
+	width: 60px;
+	height: 60px;
+	min-width: 50px;
+	min-height: 50px;	
+}
+/* current song image */
+.song-image img {
+	width: 100%;
+	height: 100%;
+	padding-top: 3px;
+}
+/* song decscription */
+.name-author {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.name-author div:nth-child(1) {
+	font-size: 16px;
+}
+/* song author */
+.name-author div:nth-child(2) {
+	font-size: 13px;
+}
+/* heart and ban icon */
+.heart-ban {
+	height: 100%;
+	padding-top: 4%;
+}
+
+/* currently played song */
+.song-played {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* control icons */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 22px;
+}
+/* song-duration slider */
+.slider {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+/* time dislpayed on both the sides of slider */
+.displayed-time {
+	margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.adjust-slider {
+	width: 100%;
+}
+/* dimensions and styling of slider */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+/* right-most part of the footer containing icons  */
+.other-icons {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+@media screen and (max-width: 700px) {
+	
+	.author {
+		font-size: 2vw;
+	}
+	/* playlist authors description */
+	.desc-part {
+		font-size: 1.8vw;
+	}
+	/* icons on the right hand side of footer*/
+	.other-icons > div:nth-child(3) {
+		display: none;
+	}
+	.other-icons > div:nth-child(4) {
+		display: none;
+	}
+}

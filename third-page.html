@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Pro Playlist</title>
+    <!-- stylesheet connected to playlist page -->    
+    <link rel="stylesheet" type="text/css" href="third-page.css">
+    
+    <!-- this script corresponds to the icons used -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- whole navigation bar starts -->
+    <nav class="nav-bar">
+        <!-- first div which contains menu icon  -->
+        <div class="left-panel">
+            <a href="#menu-option-box"><i class="fas fa-bars icon"></i></a>
+        </div>
+
+        <!-- hidden option box  -->
+
+        <div class="menu-options" id="menu-option-box">
+            <p><a href="index.html"><i class="fas fa-home"></i> Home</a></p>
+            <hr>
+            <p><a href ><i class="fas fa-music"></i> My Music</a></p>
+            <hr>
+            <p><a href ><i class="far fa-bell"></i> Updates</a></p>
+            <hr>
+            <p><a href ><i class="fas fa-language"></i> Change Language</a></p>
+            <hr>
+            <p><a href ><i class="fas fa-cog"></i> Settings</a></p>
+            <hr>
+            <p><a href="#" style="color:red"><i class="fas fa-times"></i> Close</a></p>
+        </div>
+        <!-- second div which contains logo and name of music player -->
+        <div class="logo-name">
+            <div class="music-player-logo">
+                <img src="media/musiclogo1.png">
+            </div>
+            <div class="website-name">
+                <h2>
+                    Music Pro
+                </h2>
+                
+            </div>
+        </div>
+        
+        <!-- third div which contains text favourites -->
+        <div class="favourite">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <!-- fourth div which contains whole search bar -->
+        <div class="whole-search-bar">
+            <div>
+                <!-- search icon -->
+                <i class="fas fa-search search-icon2"></i>
+            </div>
+            <!-- search input  -->
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-icon3"></i>
+            </div>
+        </div>
+        
+        <!-- fifth div which contains image of notification bell -->
+        <div class="notification-bell">
+            <img src="media/bell_icon.png"> 
+
+        </div>
+        <!-- sixth div which contains users profile pic -->
+        <div class="profile-picture">
+            <img src="media/profile_pic.png">
+        </div>
+    </nav>
+    <!-- main section starts  -->
+    <main>
+        <!-- main is divided into two sections first one is left section  -->
+        <aside class="aside left-section">
+
+            <!-- first div of left section (artist-playlist-info) -->
+            <!-- whole div of playlist-info -->
+            <div class="artist-playlist-info">
+
+                <!-- image inside this div  -->
+                 <div class="art-play-img"></div> <!-- image is added in css file  -->
+
+                <!-- playlist content -->
+                <div class="playlist-content">
+                    <!-- info is given in this part  -->
+                    <div class="desc-part">
+                        <div class="song-name-main">
+                            <h1>Alan Walker Songs</h1><br>
+                        </div>
+                        
+                        <p class="author">1.1 M Followers</p><br>                        
+                    </div>
+                    <!-- lower div of artist playlist -->
+                    <div class="buttons-part">
+                        <!-- action buttons -->
+                        <div class="btns">
+                            <button><i class="fas fa-play "></i>  Play Songs</button>
+                            <button><i class="fas fa-plus "></i> Follow</button>
+                            <button><i class="fas fa-download "></i> Download</button>
+                            <button><i class="fas fa-share-square "></i></button>
+                            <button><i class="fas fa-ellipsis-v "></i></button>
+                        </div><br>
+                        <p>
+                            410 Tracks | 114 Albums
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- another div -->
+            <div class="songs-highlight">
+                <p>Songs</p>
+            </div>
+            <!-- headings to the columns -->
+            <div class="heading-div">
+                <p style="padding-left: 22vh;">Track</p>
+                <p style="padding-left: 38vh;">Artists</p>
+                
+                <p style="padding-left: 44vh;">Duration</p>
+
+            </div>
+            <!-- now the playlist part begins -->
+            <div class="playlist-items">
+                <!-- playlist item consisting (number , image ,song name , artist name , icon , duration)-->
+                <div class="playlist">
+                    <div class="left">
+                        <div >
+                            01
+                        </div>
+                        <div>
+                            <img src="media/alone.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Alone, Pt. ||
+                            </h5>                            
+                        </div>
+                         
+                    </div>
+                    
+                    <div class="center">
+                        Alan Walker,Ava Max 
+                    </div>
+                    <div class="empty">
+                        <i class="far fa-heart"></i>&emsp;
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+
+                    <div class="right">
+                        3:14
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            02
+                        </div>
+                        <div>
+                            <img src="media/on_my_way.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                On My Way
+                            </h5>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="center">
+                        Alan Walker, Sabrina Carp...
+                    </div>
+                    <div class="empty">                       
+                            <i class="far fa-heart"></i>&emsp;                       
+                            <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="right">
+                        3:44
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            03
+                        </div>
+                        <div>
+                            <img src="media/intentions.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Ignite
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker, Julie Bergan
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                      
+                            <i class="fas fa-ellipsis-v"></i>                       
+
+                    </div>
+                    <div class="right">
+                        2:55
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            04
+                        </div>
+                        <div>
+                            <img src="media/safari.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Safari
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                      
+                            <i class="fas fa-ellipsis-v"></i>                      
+
+                    </div>
+                    <div class="right">
+                        3:37
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            05
+                        </div>
+                        <div>
+                            <img src="media/blinding_lights.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Lily
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker,K-391
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                       
+                            <i class="fas fa-ellipsis-v"></i>                      
+
+                    </div>
+                    <div class="right">
+                        3:27
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            06
+                        </div>
+                        <div>
+                            <img src="media/sugar.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Sugar & Brownies
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker, Noah Cyrus
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                     
+                            <i class="fas fa-ellipsis-v"></i>                       
+
+                    </div>
+                    <div class="right">
+                        4:31
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            07
+                        </div>
+                        <div>
+                            <img src="media/closer.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Closer
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker, Gavin James
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                     
+                            <i class="fas fa-ellipsis-v"></i>                        
+
+                    </div>
+                    <div class="right">
+                        3:28
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            08
+                        </div>
+                        <div>
+                            <img src="media/without_me.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Without Me
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker, Steve Aokl
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                      
+                            <i class="fas fa-ellipsis-v"></i>                        
+
+                    </div>
+                    <div class="right">
+                        3:48
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            09
+                        </div>
+                        <div>
+                            <img src="media/girls.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Girls Like You
+                            </h5>
+                            <!-- <p>
+                                Cardi B 
+                            </p> -->
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker, Salem Ilese
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                        
+                            <i class="fas fa-ellipsis-v"></i>                      
+
+                    </div>
+                    <div class="right">
+                        3:20
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            10
+                        </div>
+                        <div>
+                            <img src="media/dont_let.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Don't Let Me Down
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker, Ava Max
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                       
+                            <i class="fas fa-ellipsis-v"></i>                        
+
+                    </div>
+                    <div class="right">
+                        4:10
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            11
+                        </div>
+                        <div>
+                            <img src="media/happier.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Happier
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker,Tomie Harket
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                      
+                            <i class="fas fa-ellipsis-v"></i>                        
+
+                    </div>
+                    <div class="right">
+                        4:00
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist">
+                    <div class="left">
+                        <div>
+                            12
+                        </div>
+                        <div>
+                            <img src="media/baby.png">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Diamond Heart 
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="center">
+                        Alan Walker,Sophia Somajo
+                    </div>
+                    <div class="empty">                        
+                            <i class="far fa-heart"></i>&emsp;                       
+                            <i class="fas fa-ellipsis-v"></i>                        
+
+                    </div>
+                    <div class="right">
+                        3:31
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- when size of page is shorten then this label will appear -->
+        <label for="queue"><i class="fas fa-angle-double-left"></i>Queue</label>
+        
+        <input type="checkbox" id="queue">
+        <!-- 2nd section of aside starts -->
+        <aside class="aside section-2">
+            <!-- "similar" class is applicable to both similar artists and recently played section -->
+            <div class="similar">
+                <!-- section heading, which also contains the view all button -->
+                <div class="section-heading">
+                    <h1>Similar Artists</h1>
+                    <div class="view-all-button">
+                        View All
+                    </div>
+                </div>
+                <!-- whole content in similar artist -->
+                <div class="similar-artists-list">
+                    <!-- list items -->
+                    <div class="list-item">
+                        <div>
+                            <div class="img-button">
+                                <img src="media/love_me.png">
+                            
+                                <i class="far fa-play-circle play-button-2"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Love me
+                            </h5>
+                            <p class="name">
+                                Justin Beiber
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="name">
+                                2:14
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <div class="img-button">
+                               <img src="media/gotti.png">
+                            
+                                <i class="far fa-play-circle play-button-2"></i>
+                            </div> 
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Gotti
+                            </h5>
+                            <p class="name">
+                                6ix9ine
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:00
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <div class="img-button">
+                                <img src="media/gang_gang.png">
+                            
+                                <i class="far fa-play-circle play-button-2"></i>
+                            </div> 
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Gang Gang
+                            </h5>
+                            <p class="name">
+                                Migos
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- recently played section -->
+                <div class="similar">
+                    <!-- section headings, which also contains the view all button -->
+                    <div class="section-heading">
+                        <h1>Recently Played</h1>
+                        <div class="view-all-button">
+                            View All
+                        </div>
+                    </div>
+                    <!-- again list is a container for all the contents of recently played section -->
+                    <div class="list">
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    01
+                                </div>
+                                <div>
+                                    <img src="media/girls.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Girls Like You
+                                    </h5>
+                                    <p>
+                                        Cardi B
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    02
+                                </div>
+                                <div>
+                                    <img src="media/let_me_go.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Let Me Go
+                                    </h5>
+                                    <p>
+                                        NoMethod
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    03
+                                </div>
+                                <div>
+                                    <img src="media/without_me.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Without Me
+                                    </h5>
+                                    <p>
+                                        Post Malone 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    04
+                                </div>
+                                <div>
+                                    <img src="media/roar.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Roar
+                                    </h5>
+                                    <p>
+                                        Ketty Perry
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    05
+                                </div>
+                                <div>
+                                    <img src="media/toosie.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Toosie Slide
+                                    </h5>
+                                    <p>
+                                        Drake
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    06
+                                </div>
+                                <div>
+                                    <img src="media/uptown_funk.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Uptown Funk
+                                    </h5>
+                                    <p>
+                                        Bruno Mars
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    07
+                                </div>
+                                <div>
+                                    <img src="media/Raatan.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Ranjha
+                                    </h5>
+                                    <p>
+                                        B Praak
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item">
+                            <div class="left">
+                                <div>
+                                    08
+                                </div>
+                                <div>
+                                    <img src="media/sakhiyan.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Sakhiyan 2.0
+                                    </h5>
+                                    <p>
+                                        Maninder Buttar
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="playlist-item" style="margin-bottom: 20%;">
+                            <div class="left">
+                                <div>
+                                    09
+                                </div>
+                                <div>
+                                    <img src="media/Raatan.png">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Raataan Lambiyan
+                                    </h5>
+                                    <p>
+                                        SherShah
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- footer part starts which is displayed on the bottom of the page and is fixed -->
+    <footer>
+        <div class="song-content">
+            <!-- icon (up arrow) -->
+            <i class="fas fa-angle-up icon"></i>
+            <!-- song image -->
+            <div class="song-image">
+                <img src="media/Marshmello.jpg">
+            </div>
+            <!-- song name and author -->
+            <div class="name-author">
+                <div>
+                    Alone
+                </div>
+                <div>
+                    Marshmello 
+                </div>                
+            </div>
+            <!-- heart icon and ban icon -->
+            <div class="heart-ban">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the song controls -->
+        <div class="song-played">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><a href="second-page.html"><i class="far fa-play-circle" style="color: rgb(103, 103, 231);"></i></a></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- song-duration slider -->
+            <div class="slider">
+                <!-- current time -->
+                <div class="displayed-time">
+                    1:39
+                </div>
+                <div class="adjust-slider">
+                    <input type="range" min="0" max="100" value="0" class="slider">
+                </div>
+                <!-- total time -->
+                <div class="displayed-time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons on the right-most side of footer -->
+        <div class="other-icons">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
